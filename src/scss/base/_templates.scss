@@ -1,0 +1,33 @@
+%title {
+  font-family: $ff-title;
+  @include adaptiv-font(40, 24);
+  line-height: 40px;
+  font-weight: $fw-4;
+}
+
+%dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid $col-text;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+%before-circle {
+  &::before {
+    content: "23";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -1px;
+    left: 15px;
+    font-weight: $fw-7;
+    font-size: $fs-header-10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #e46942;
+  }
+}

@@ -1,0 +1,162 @@
+.sale {
+  padding-top: 120px;
+  &__titel {
+    @extend %title;
+  }
+
+  &__btn-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn-row {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__btn-item {
+  }
+
+  &__btn {
+    background: #f0f0f0;
+    padding: 13px 30px;
+    border-radius: 21px;
+    margin-right: 8px;
+    transition: all 0.4s ease;
+    &:hover {
+      background: #dddddd;
+    }
+    &:active {
+      color: $col-bg;
+      background: $col-text;
+    }
+  }
+
+  &__btn--active {
+    color: $col-bg;
+    background: $col-text;
+  }
+
+  &__btn-wrap {
+    display: flex;
+  }
+
+  &__slider-btn {
+    width: 54px;
+    height: 54px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  &__slider-btn--disabled {
+    opacity: 0.2;
+  }
+
+  &__pre-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__next-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    gap: 20px;
+  }
+
+  &__container {
+    border: 1px solid #f0f0f0;
+    padding: 16px 24px 26px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__sale {
+    align-self: flex-start;
+    padding: 4px 11px 4px 12px;
+    color: #ffffff;
+    font-weight: $fw-5;
+    font-size: $fs-sale-13;
+    background: #5b8a8f;
+    border-radius: 15px;
+  }
+
+  &__icons-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__dot {
+  }
+
+  &__dot-btn {
+    @extend %dot;
+  }
+
+  &__dot-btn--active {
+    background: #303030;
+  }
+
+  &__inner-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__prices {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__new-price {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  &__old-price {
+    color: #8f8f8f;
+    text-decoration-line: line-through;
+  }
+
+  &__discount {
+    padding: 4px 8px;
+    background: #e24b33;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #ffffff;
+  }
+
+  &__text {
+    margin-top: 16px;
+    line-height: 160%;
+  }
+}

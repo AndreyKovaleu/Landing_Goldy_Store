@@ -1,0 +1,95 @@
+.banners {
+  padding-top: 20px;
+  &__wrapper {
+    min-width: 1300px;
+    position: relative;
+  }
+  &__slider-box {
+    // display: flex;
+  }
+  &__slide {
+    position: relative;
+    background-color: #f8f8f8;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__slide-content {
+    position: absolute;
+    left: 126px;
+    top: 176px;
+  }
+  &__offer {
+    font-family: $ff-title;
+    font-size: $fs-banners-20;
+    font-weight: $fw-4;
+    color: $col-text;
+  }
+  &__text-big {
+    margin-top: 30px;
+    margin-bottom: 54px;
+    font-family: $ff-title;
+    font-size: $fs-banners-50;
+    font-weight: $fw-4;
+    color: $col-text;
+  }
+  &__link {
+    display: inline-block;
+    background-color: $col-text;
+    padding: 20px 56px;
+    color: $col-bg;
+    font-weight: $fw-5;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: #505050;
+    }
+    &:active {
+      background-color: #000000;
+    }
+  }
+  &__prev {
+    position: absolute;
+    top: 253px;
+    left: 24px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+  }
+  &__prew-icon {
+    display: flex;
+    justify-content: center;
+  }
+  &__next {
+    position: absolute;
+    top: 253px;
+    right: 24px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+  }
+  &__next-icon {
+    display: flex;
+    justify-content: center;
+  }
+  &__dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px;
+    left: 624px;
+  }
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+  &__dot-btn {
+  }
+}

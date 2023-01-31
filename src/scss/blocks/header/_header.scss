@@ -1,0 +1,129 @@
+.header {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    padding: 24px 0 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__navbar {
+    display: flex;
+    margin-top: 21px;
+  }
+  &__location {
+    width: 159.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 60px;
+  }
+  &__location-icon {
+    padding: 0 2.21px;
+  }
+  &__cities {
+  }
+  &__cities-list {
+  }
+  &__town {
+    position: relative;
+  }
+  &__town-btn {
+    // margin-right: 12.5px;
+    padding-right: 12.5px;
+    position: relative;
+    color: $col-text;
+  }
+  &__text {
+  }
+  &__icon-up {
+    position: absolute;
+    top: -4.5px;
+    right: -12.5px;
+    display: none;
+  }
+  &__icon-down {
+    position: absolute;
+    top: 0px;
+    right: -12.5px;
+  }
+  &__sub-cities-list {
+    width: 197px;
+    position: absolute;
+    top: 25px;
+    left: -24px;
+    background: $col-bg;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding-top: 21px;
+    padding-bottom: 15px;
+    z-index: 10;
+    display: none;
+  }
+  &__sub-town {
+  }
+  &__sub-town-link {
+    display: block;
+    padding: 9px 28px 9px 24px;
+    color: $col-text;
+    &:hover {
+      background: #fafafa;
+    }
+  }
+  &__sub-text {
+    padding-right: 8px;
+  }
+  &__sub-icon {
+  }
+  &__phone {
+    width: 141px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__phone-icon {
+  }
+  &__tel {
+    color: $col-text;
+  }
+  &__logo {
+    margin-top: 2px;
+    margin-right: 25px;
+  }
+  &__login {
+    width: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+  }
+  &__divider {
+    width: 1px;
+    height: 10px;
+    background-color: $col-text;
+  }
+  &__entry {
+    color: $col-text;
+  }
+  &__registration {
+    color: $col-text;
+  }
+  &__icons-row {
+    position: relative;
+    width: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %before-circle;
+  }
+  &__icons-link {
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

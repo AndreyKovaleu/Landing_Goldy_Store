@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {'title': 'Goldy Store'})
+
+<body>
+  <div class="container">
+    @@include('html/header.html', {})
+    <main class="main">
+      @@include('html/banners.html', {})
+      @@include('html/popular.html', {})
+      @@include('html/sale.html', {})
+      @@include('html/discounts.html', {})
+      @@include('html/productOfDay.html', {})
+      @@include('html/articles.html', {})
+    </main>
+    @@include('html/footer.html', {})
+  </div>
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

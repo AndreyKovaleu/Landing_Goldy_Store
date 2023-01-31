@@ -1,0 +1,56 @@
+.nav {
+  &__content {
+    display: flex;
+    background: $col-item;
+  }
+
+  &__list {
+    display: flex;
+    padding: 24px 49px 24px 50px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding-right: 60.9px;
+  }
+
+  &__link {
+    font-weight: $fw-5;
+    font-size: $fs-nav-13;
+    color: $col-text;
+    transition: all 0.4s ease;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__link--active {
+    opacity: 0.5;
+  }
+
+  &__search {
+    display: flex;
+    border-left: 1px solid #f0f0f0;
+    padding: 21px 25px 21px 24px;
+  }
+
+  &__btn {
+    margin-right: 13px;
+    outline: 0;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__input {
+    background-color: $col-item;
+    color: $col-text;
+    margin-left: 2px;
+    margin-top: -1px;
+    &::placeholder {
+      color: #a2a2a2;
+    }
+  }
+}

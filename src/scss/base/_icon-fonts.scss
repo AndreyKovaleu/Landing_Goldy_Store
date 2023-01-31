@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot?pxxsrg");
+  src: url("../fonts/icons.eot?pxxsrg#iefix") format("embedded-opentype"),
+    url("../fonts/icons.ttf?pxxsrg") format("truetype"), url("../fonts/icons.woff?pxxsrg") format("woff"),
+    url("../fonts/icons.svg?pxxsrg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+%ic {
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  &::before {
+    @extend %ic;
+    // display: block;
+  }
+}
+
+.icon-arrow-next:before {
+  content: "\e900";
+}
+.icon-arrow-prev:before {
+  content: "\e901";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-eye:before {
+  content: "\e903";
+  color: #c9c9c9;
+}
+.icon-favorite:before {
+  content: "\e904";
+}
+.icon-heart:before {
+  content: "\e905";
+  color: #c9c9c9;
+}
+.icon-location:before {
+  content: "\e906";
+}
+.icon-phone:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e908";
+}
+.icon-share:before {
+  content: "\e909";
+  color: #c9c9c9;
+}
+.icon-up:before {
+  content: "\e90a";
+}
+.icon-down:before {
+  content: "\e90b";
+}
+.icon-bag:before {
+  content: "\e90c";
+}
+.icon-chart:before {
+  content: "\e90d";
+}

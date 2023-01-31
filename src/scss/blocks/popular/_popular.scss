@@ -1,0 +1,36 @@
+.popular {
+  padding-top: 120px;
+  &__title {
+    @extend %title;
+  }
+  &__wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  &__inner {
+    background-color: $col-item;
+  }
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 141px;
+    min-height: 147px;
+    margin-top: 37px;
+  }
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+  &__headline {
+    margin-top: 34px;
+    text-align: center;
+    font-size: $fs-popular-16;
+    margin-bottom: 17px;
+    &--mt27 {
+      margin-top: 27px;
+    }
+  }
+}
