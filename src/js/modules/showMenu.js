@@ -21,13 +21,13 @@ function showMenu(menuSelector, triggerSelector, triggerIconUpSelector, triggerI
     changeIcon(triggerIconUpSelector, triggerIconDownSelector);
   });
 
-  window.addEventListener("click", (e) => {
-    if (!e.target.matches(menuTrigger)) {
-      if (menu.classList.contains('show')) {
-        menu.classList.remove("show");
-      }
-    }
-  })
+  // window.addEventListener("click", (e) => {
+  //   if (!e.target.matches(menuTrigger)) {
+  //     if (menu.classList.contains('show')) {
+  //       menu.classList.remove("show");
+  //     }
+  //   }
+  // })
 
 }
 
