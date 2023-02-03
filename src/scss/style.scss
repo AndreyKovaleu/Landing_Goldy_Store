@@ -6,6 +6,11 @@
 @import "base/variables";
 @import "base/templates";
 
+// @import "$node/swiper/swiper.scss";
+
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/navigation/navigation";
+
 // desktop
 @import "blocks/container/container";
 @import "blocks/header/header";

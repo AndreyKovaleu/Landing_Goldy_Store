@@ -1,0 +1,294 @@
+// .swiper {
+//   height: 200px;
+// }
+// .swiper-button-next::after {
+//   color: $col-text;
+//   font-size: 1ex;
+//   // font-size: 80px;
+//   // font-family: "icons";
+//   // content: "\e900";
+//   // // font-size: 100px;
+//   // font-size: 1ex;
+// }
+
+.product-of-day {
+  padding-top: 120px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__slider-control-wrap {
+    display: flex;
+  }
+
+  &__slider-control-btn-prev {
+    width: 54px;
+    height: 54px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+  }
+
+  &__slider-control-icon {
+    font-size: 1ex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider-control-btn-next {
+    width: 54px;
+    height: 54px;
+    border: 1px solid $col-text;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  &__content {
+    margin-top: 33px;
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+    display: grid;
+    grid-template-columns: 550px 650px;
+    gap: 100px;
+  }
+
+  &__wrapper-left {
+    position: relative;
+  }
+
+  &__info-row {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 16px;
+    left: 16px;
+  }
+
+  &__new {
+    padding: 4px 11px 4px 10px;
+    background: #495159;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    margin-right: 4px;
+  }
+
+  &__hit {
+    padding: 4px 13px;
+    background: #e1a661;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    margin-right: 4px;
+  }
+
+  &__sale {
+    padding: 4px 11px 4px 12px;
+    background: #5b8a8f;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  &__content-img {
+  }
+
+  &__wrapper-img {
+  }
+
+  &__slide-img {
+  }
+
+  &__img {
+  }
+
+  &__img-button-prev {
+  }
+
+  &__img-button-next {
+  }
+
+  &__wrapper-right {
+  }
+
+  &__inner-stars {
+    display: flex;
+  }
+
+  &__stars-row {
+    display: flex;
+  }
+
+  &__star {
+    margin-right: 6px;
+  }
+
+  &__grade {
+    align-self: center;
+    margin-left: 4px;
+  }
+
+  &__caption {
+    margin-top: 24px;
+    font-family: $ff-title;
+    font-size: $fs-32;
+    line-height: 32px;
+    color: $col-text;
+  }
+
+  &__vendor-code {
+    margin-top: 20px;
+  }
+
+  &__block {
+    margin-top: 2px;
+    display: flex;
+  }
+
+  &__bl {
+    align-self: end;
+    display: flex;
+    margin-bottom: 13px;
+  }
+
+  &__prices {
+    align-self: end;
+    display: flex;
+  }
+
+  &__price-new {
+    font-weight: $fw-6;
+    font-size: $fs-20;
+    color: $col-text;
+    margin-right: 16px;
+  }
+
+  &__price-old {
+    font-size: $fs-16;
+    text-decoration-line: line-through;
+    color: #8f8f8f;
+    margin-right: 16px;
+  }
+
+  &__discount {
+    align-self: start;
+    padding: 4px 8px;
+    background: #e24b33;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  &__timer {
+    display: flex;
+    background: #f5f5f5;
+    padding: 12px 14px;
+  }
+
+  &__timer-inner {
+    padding: 6px 7px 5px;
+    background: #ffffff;
+    border: 1px solid #d0d0d0;
+  }
+
+  &__timer-time {
+    font-weight: $fw-7;
+    font-size: $fs-16;
+    text-align: center;
+    color: #303030;
+  }
+
+  &__timer-text {
+    font-weight: $fw-light;
+    font-size: $fs-11;
+    text-align: center;
+    color: $col-text;
+  }
+
+  &__separator {
+  }
+
+  &__inner-colour {
+  }
+
+  &__colour-text {
+  }
+
+  &__colour-row {
+  }
+
+  &__inner-circle {
+  }
+
+  &__circle-gray {
+  }
+
+  &__circle-goldenrod {
+  }
+
+  &__circle-chocolate {
+  }
+
+  &__circle-honeydew {
+  }
+
+  &__inner-size {
+  }
+
+  &__size-text {
+  }
+
+  &__info {
+  }
+
+  &__size-row {
+  }
+
+  &__size {
+  }
+
+  &__box {
+  }
+
+  &__buttons {
+  }
+
+  &__button {
+  }
+
+  &__icons {
+  }
+
+  &__icon {
+  }
+}
+.icon-arrow-prev {
+}
+.icon-arrow-next {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.icon-heart {
+}
+.icon-chart {
+}
+.icon-share {
+}
