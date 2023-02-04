@@ -80,7 +80,7 @@
     border-radius: 15px;
     font-weight: 500;
     font-size: 13px;
-    color: #fff;
+    color: $col-bg;
     margin-right: 4px;
   }
 
@@ -90,7 +90,7 @@
     border-radius: 15px;
     font-weight: 500;
     font-size: 13px;
-    color: #fff;
+    color: $col-bg;
     margin-right: 4px;
   }
 
@@ -100,7 +100,7 @@
     border-radius: 15px;
     font-weight: 500;
     font-size: 13px;
-    color: #fff;
+    color: $col-bg;
   }
 
   &__content-img {
@@ -154,19 +154,18 @@
   }
 
   &__block {
-    margin-top: 2px;
     display: flex;
   }
 
   &__bl {
-    align-self: end;
     display: flex;
-    margin-bottom: 13px;
   }
 
   &__prices {
-    align-self: end;
     display: flex;
+    align-items: end;
+    margin-right: 16px;
+    margin-bottom: 10px;
   }
 
   &__price-new {
@@ -180,28 +179,29 @@
     font-size: $fs-16;
     text-decoration-line: line-through;
     color: #8f8f8f;
-    margin-right: 16px;
   }
 
   &__discount {
-    align-self: start;
+    margin-bottom: 13px;
+    margin-top: 30px;
     padding: 4px 8px;
     background: #e24b33;
     border-radius: 15px;
     font-weight: 500;
     font-size: 13px;
-    color: #fff;
+    color: $col-bg;
   }
 
   &__timer {
     display: flex;
     background: #f5f5f5;
     padding: 12px 14px;
+    margin-left: 36px;
   }
 
   &__timer-inner {
     padding: 6px 7px 5px;
-    background: #ffffff;
+    background: $col-bg;
     border: 1px solid #d0d0d0;
   }
 
@@ -209,7 +209,7 @@
     font-weight: $fw-7;
     font-size: $fs-16;
     text-align: center;
-    color: #303030;
+    color: $col-text;
   }
 
   &__timer-text {
@@ -217,48 +217,110 @@
     font-size: $fs-11;
     text-align: center;
     color: $col-text;
+    padding-top: 2px;
+    &--pad-lg {
+      padding: 2px 3px 0;
+    }
+    &--pad-md {
+      padding: 2px 2px 0 3px;
+    }
   }
 
   &__separator {
+    margin: 0px 9px;
+    align-self: center;
+  }
+
+  &__divide {
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0;
   }
 
   &__inner-colour {
+    margin-top: 30px;
   }
 
   &__colour-text {
+    font-weight: $fw-semibold;
+    font-size: $fs-12;
+    text-transform: uppercase;
+    color: $col-text;
   }
 
   &__colour-row {
+    display: flex;
+    margin-top: 16px;
   }
 
   &__inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    margin-right: 8px;
+    &--active {
+      border-color: $col-text;
+    }
   }
 
-  &__circle-gray {
-  }
-
-  &__circle-goldenrod {
-  }
-
-  &__circle-chocolate {
-  }
-
-  &__circle-honeydew {
+  &__circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    &--gray {
+      background: #d9d9d9;
+    }
+    &--goldenrod {
+      background: #f1cb7e;
+    }
+    &--chocolate {
+      background: #ea8c48;
+    }
+    &--honeydew {
+      background: #a7e492;
+    }
   }
 
   &__inner-size {
+    margin-top: 30px;
+    font-size: 0;
+  }
+
+  &__text-row {
+    display: flex;
+    align-items: center;
   }
 
   &__size-text {
+    margin-right: 8px;
+    font-weight: $fw-semibold;
+    font-size: $fs-12;
+    text-transform: uppercase;
+    color: $col-text;
   }
 
   &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #f0f0f0;
+    border-radius: 50%;
   }
 
   &__size-row {
+    margin-top: 14px;
   }
 
   &__size {
+    &--active {
+    }
   }
 
   &__box {
